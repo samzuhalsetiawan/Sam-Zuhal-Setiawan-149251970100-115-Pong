@@ -1,2 +1,4 @@
 # Sam-Zuhal-Setiawan-149251970100-115-Pong
-Repository ini digunakan untuk submission Pelatihan DTS Game Programming Agate 2022
+
+* Nama : Sam Zuhal Setiawan
+* No Registrasi : 149251970100-115
