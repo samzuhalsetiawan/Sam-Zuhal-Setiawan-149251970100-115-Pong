@@ -25,10 +25,12 @@ public class PaddleController : MonoBehaviour
     {
         if (Input.GetKey(upKey))
         {
+            Debug.Log("Kecepatan Paddle: " + rig.velocity);
             return Vector3.up * speed;
         }
         if (Input.GetKey(downKey))
         {
+            Debug.Log("Kecepatan Paddle: " + rig.velocity);
             return Vector3.down * speed;
         }
         return Vector2.zero;
