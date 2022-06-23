@@ -15,4 +15,14 @@ public class ButtonController : MonoBehaviour
     {
         Debug.Log("Created By: Sam Zuhal Setiawan :)");
     }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void GoToCredit()
+    {
+        SceneManager.LoadScene("Credit");
+    }
 }

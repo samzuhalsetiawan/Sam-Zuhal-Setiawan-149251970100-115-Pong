@@ -12,6 +12,7 @@ public class PowerUpManager : MonoBehaviour
     public List<GameObject> powerUpTemplateList;
     public int spawnInterval;
     private float timer;
+    public float powerUpLifeTime;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +57,13 @@ public class PowerUpManager : MonoBehaviour
         powerUp.SetActive(true);
 
         powerUpList.Add(powerUp);
+        StartCoroutine(TimeUp(powerUp));
+    }
+
+    private IEnumerator TimeUp(GameObject powerUp)
+    {
+        yield return new WaitForSeconds(powerUpLifeTime);
+        RemovePowerUp(powerUp);
     }
     public void RemovePowerUp(GameObject powerUp)
     {

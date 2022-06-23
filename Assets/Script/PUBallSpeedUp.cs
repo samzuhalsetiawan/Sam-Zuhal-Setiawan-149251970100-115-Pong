@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerUp : MonoBehaviour
+public class PUBallSpeedUp : MonoBehaviour
 {
     public Collider2D ball;
     public float magnitude;
